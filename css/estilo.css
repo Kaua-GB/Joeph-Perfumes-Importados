@@ -1,0 +1,75 @@
+   /*Estilização padrão da Pagina*/
+
+body{
+margin: 1;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
+
+}
+ 
+
+/*Estilizaçãio para o header da pagina*/
+
+header{
+background-color: #daa250;
+padding: 20px 0 2   0px 0 ;
+}
+
+/*estilização logo*/
+.logo{
+width: 10%;
+/*margin-left: 5%;*/ 
+padding-left: 3%;
+}
+ 
+/*estilização "letras"*/
+nav{
+    color: white;
+    position: absolute;
+    top: 10%;   
+    right: 1%;
+    font-size: 35;
+    font-family: cursive;
+}
+
+nav li{
+    display: inline;
+    margin: 20px;
+
+}
+
+.divHeader{
+    position: relative;
+}
+
+/*estilização do banner*/
+.banner{
+    width: 100%;
+    height: 63%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+
+/*ESTILIZAÇÃO DA SESSÃO SOBRE NÓS+*/
+.sobre_nos{
+    width: 70%;
+margin-left: 15%;
+text-align: justify;
+font-size: 20px;
+}
+
+/*ESTILIZAÇÃO IMAGEM SOBRE NÓS*/
+.img_sobre_nos{
+width: 19%;
+float: left;
+margin-right: 10px;
+}
+
+/*ESTILIZAÇÃO DA 'HISTÓRIA' SOBRE NÓS*/
+.titulo_sobre_nos{
+clear: left;
+text-align: center;
+
+}
+ 
