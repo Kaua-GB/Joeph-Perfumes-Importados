@@ -1,6 +1,11 @@
-   /*Estilização padrão da Pagina*/
+  
+/*Estilização da cor do site*/
+main{
+    background: linear-gradient(#dda250 , #d4af37 , #996515 , #000000 );
+}
 
-body{
+ /*Estilização padrão da Pagina*/
+   body{
 margin: 1;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
 
@@ -47,11 +52,17 @@ nav li{
     height: 63%;
     object-fit: cover;
     object-position: bottom;
+    margin: 0%
 }
 
+/*ESTILIZAÇÃO DOS TITULOS*/
+ .titulos{
+     text-align: center;
+
+ } 
 
 
-/*ESTILIZAÇÃO DA SESSÃO SOBRE NÓS+*/
+/*ESTILIZAÇÃO DA SESSÃO SOBRE NÓS*/
 .sobre_nos{
     width: 70%;
 margin-left: 15%;
@@ -69,7 +80,32 @@ margin-right: 10px;
 /*ESTILIZAÇÃO DA 'HISTÓRIA' SOBRE NÓS*/
 .titulo_sobre_nos{
 clear: left;
-text-align: center;
 
 }
  
+/*ESTILIZAÇÃO DA SEÇÃO NOSSO ESTABELECIMENTO*/
+.mapa{
+    text-align: center;
+    
+}
+
+
+   /*ESTILIZAÇÃO DA SEÇÃO NOSSOS PRODUTOS*/ 
+.titulos_nossosprodutos{
+    text-align: center;
+    color: white;
+
+}
+
+.img_nossos_produtos{
+    position: relative;
+    width: 13%;
+    right: -50%;
+    top: 8px;
+}
+
+.nossosprodutos ul{
+    width: 50%;
+    position: absolute;
+    padding-left: 20%;
+}
