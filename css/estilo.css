@@ -1,7 +1,9 @@
   
 /*Estilização da cor do site*/
 main{
-    background: linear-gradient(#dda250 , #d4af37 , #996515 , #000000 );
+    background-color: black;
+    color: #daa250;
+    /* background: linear-gradient(#dda250 , #d4af37 , #996515 , #000000 ); */
 }
 
  /*Estilização padrão da Pagina*/
@@ -15,7 +17,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 /*Estilizaçãio para o header da pagina*/
 
 header{
-background-color: #daa250;
+background-color: #000000;
 padding: 20px 0 2   0px 0 ;
 }
 
@@ -28,7 +30,7 @@ padding-left: 3%;
  
 /*estilização "letras"*/
 nav{
-    color: white;
+    color: #daa250;
     position: absolute;
     top: 10%;   
     right: 1%;
@@ -68,6 +70,7 @@ nav li{
 margin-left: 15%;
 text-align: justify;
 font-size: 20px;
+/* color: white; */
 }
 
 /*ESTILIZAÇÃO IMAGEM SOBRE NÓS*/
@@ -80,12 +83,14 @@ margin-right: 10px;
 /*ESTILIZAÇÃO DA 'HISTÓRIA' SOBRE NÓS*/
 .titulo_sobre_nos{
 clear: left;
+margin: 0;
 
 }
  
 /*ESTILIZAÇÃO DA SEÇÃO NOSSO ESTABELECIMENTO*/
 .mapa{
     text-align: center;
+    /* color: white */
     
 }
 
@@ -93,19 +98,66 @@ clear: left;
    /*ESTILIZAÇÃO DA SEÇÃO NOSSOS PRODUTOS*/ 
 .titulos_nossosprodutos{
     text-align: center;
-    color: white;
+    /* color: rgb(255, 255, 255); */
+    
 
 }
 
 .img_nossos_produtos{
+    border-radius: 8px;
     position: relative;
-    width: 13%;
-    right: -50%;
-    top: 8px;
+    width: 12%;
+    right: -60%;
+    top: 0px;
+    opacity: 1;
+    transition: 400;
 }
 
 .nossosprodutos ul{
-    width: 50%;
+  /* color: rgb(255, 255, 255); */
+    list-style: none;
+    width: 15%;
     position: absolute;
-    padding-left: 20%;
+    padding-left: 35%;
+    line-height: 2.5;
+    font-size: 18px;
+}
+
+
+/*VIDEO*/
+
+.video{
+text-align: center;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+/*FOOTER*/
+
+footer p{
+color:#ffffff;
+text-align: right;
+font-size: 20px;
+}
+ /*rodapé*/
+
+footer{
+    
+padding: 95px 10px 10px;
+background: url("../img/rodape.png");
+background-size: cover;
+background-position: center;
+background-color:rgba(0,0,0,0.6);
+background-blend-mode: darken;
+
+}       
+footer a {
+color: white;
+text-decoration: none;
+
+}
+.logo_footer{
+width: 10%;
+padding-left: 90%;
+
 }
