@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <link href="../css/estilo.css" rel="stylesheet"/>
+        <link href="../css/estilo_produto.css" rel="stylesheet"/>
+        <link href="../img/favicon.ico" rel="icon" type="image/x-con">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <title>Joseph Perfumes Importados</title>
+        <script>
+            
+
+            function abrirDetalhes(nome,imagem,descricao){
+               
+               url=`pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
+
+               window.open(url, "_blank", "width=800,height=670") 
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="divHeader">
+                <img src="../img/logo.jpeg" class="logo"/>
+                <!--Barra de navegação-->
+                <nav>
+                    <!--Lista de itens do menu-->
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../telas/produtos.html">PRODUTOS</a></li>
+                         <li><a href= "../telas/contatos.html">CONTATOS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!--Conteúdo da Página PRODUTOS-->
+        <main>
+            <ul class="produtos-titulo">
+                <li>PRODUTOS</li>
+            </ul>
+            <!--Exibe a data-->
+            <p class="data">
+                <script type="text/JavaScript">
+                    dia = new Array("Domingo","Segunda-feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sábado");
+
+                    mes = new Array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+
+                    data = new Date
+                    document.write(dia[data.getDay()] + ", " +  data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                </script>
+            </p>
+            <!--Exibição dos Produtos-->
+            <div class="container">
+                <script>
+                    //Descrição do produto
+                    desc_produto="Esses são um dos nossos produtos.\n\nEscolha  um de sua preferência!!!"
+                    slider=['../img/PRODUTOS/PRODUTO01.jpg','../img/PRODUTOS/PRODUTO02.jpg','../img/PRODUTOS/PRODUTO03.jpg','../img/PRODUTOS/PRODUTO04.jpg','../img/PRODUTOS/PRODUTO05.jpg','../img/PRODUTOS/PRODUTO06.jpg','../img/PRODUTOS/PRODUTO07.webp','../img/PRODUTOS/PRODUTO08.jpg'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('Le Male Le Parfum Jean Paul Gaultier', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO01.jpg" />
+                    <h2>Le Male Le Parfum Jean Paul Gaultier - 200ml. </h2>
+                    <p>Sua fixação é surpreendente, podendo ficar por até 10 horas na pele </p>
+                    <p class="preco">R$ 900,00</p>
+                </div>
+                <script>
+                    desc_produto2="Esses são um dos nossos produtos.\n\nEscolha  um de sua preferência!!!"
+                    slider2=['../img/PRODUTOS/PRODUTO01.jpg','../img/PRODUTOS/PRODUTO02.jpg','../img/PRODUTOS/PRODUTO03.jpg','../img/PRODUTOS/PRODUTO04.jpg','../img/PRODUTOS/PRODUTO05.jpg','../img/PRODUTOS/PRODUTO06.jpg','../img/PRODUTOS/PRODUTO07.webp','../img/PRODUTOS/PRODUTO08.jpg'];
+                </script>
+                <div class="card" onclick="abrirDetalhes('1 Million Parfum', slider2, desc_produto3)">
+                    <img src="../img/PRODUTOS/PRODUTO02.jpg" alt="Produto 2">
+                    <h2> 1 Million Parfum - 200ml. </h2>
+                    <p>É esse estilo de "cheguei " que você tá procurando? </p>
+                    <p class="preco">R$ 850,00</p>
+                </div>
+
+
+
+                
+                <div class="card" onclick="abrirDetalhes('Jean Paul Gaultier Ultra Male', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO03.jpg" alt="Produto 3">
+                    <h2>Jean Paul Gaultier Ultra Male - 125Ml</h2>
+                    <p>Como ele é muito forte, 2 a 4 borrifadas costumam ser mais do que suficientes.</p>
+                    <p class="preco">R$ 750,00</p>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Jean Paul Gaultier Gaultier Divine Couture', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO04.jpg" alt="Produto 1">
+                    <h2> Jean Paul Gaultier Gaultier Divine Couture Eau de Parfum Feminino - 100ml </h2>
+                    <p>O Gaultier Divine é uma fragrância floral marinha.</p>
+                    <p class="preco">R$ 900,00</p>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Jean Paul Gaultier Divine Intense', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO05.jpg" alt="Produto 2">
+                    <h2> Jean Paul Gaultier Divine Intense Le Parfum - 100ml </h2>
+                    <p>O Divine Le Parfum é uma fragrância floral âmbar intensa que combina o brilho do lírio.</p>
+                    <p class="preco">R$ 900,00</p>
+                    <script>
+                    desc_produto5="Esses são um dos nossos produtos.\n\nEscolha  um de sua preferência!!!"
+                    slider5=['../img/PRODUTOS/PRODUTO01.jpg','../img/PRODUTOS/PRODUTO02.jpg','../img/PRODUTOS/PRODUTO03.jpg','../img/PRODUTOS/PRODUTO04.jpg','../img/PRODUTOS/PRODUTO05.jpg','../img/PRODUTOS/PRODUTO06.jpg','../img/PRODUTOS/PRODUTO07.webp','../img/PRODUTOS/PRODUTO08.jpg'];
+                </script>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Good Girl', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO06.jpg" alt="Produto 3">
+                    <h2> Good Girl Eau de Parfum -  125ml </h2>
+                    <p>O Good Girl é uma fragrância floral oriental marcante que contrasta a doçura do jasmim.</p>
+                    <p class="preco">R$ 700,00</p>
+                    <script>
+                    desc_produto6="Esses são um dos nossos produtos.\n\nEscolha  um de sua preferência!!!"
+                    slider6=['../img/PRODUTOS/PRODUTO01.jpg','../img/PRODUTOS/PRODUTO02.jpg','../img/PRODUTOS/PRODUTO03.jpg','../img/PRODUTOS/PRODUTO04.jpg','../img/PRODUTOS/PRODUTO05.jpg','../img/PRODUTOS/PRODUTO06.jpg','../img/PRODUTOS/PRODUTO07.webp','../img/PRODUTOS/PRODUTO08.jpg'];
+                </script>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Pano de Prato', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO07.webp" alt="Produto 3">
+                    <h2> Combo Deleite: Body Splash 200ml + Loção Hidratante Corporal 400ml  </h2>
+                    <p>Para deixar sua pele  hidratada e com um leve odor doce.</p>
+                    <p class="preco">R$ 170,00</p>
+                    <script>
+                    desc_produto7="Esses são um dos nossos produtos.\n\nEscolha  um de sua preferência!!!"
+                    slider7=['../img/PRODUTOS/PRODUTO01.jpg','../img/PRODUTOS/PRODUTO02.jpg','../img/PRODUTOS/PRODUTO03.jpg','../img/PRODUTOS/PRODUTO04.jpg','../img/PRODUTOS/PRODUTO05.jpg','../img/PRODUTOS/PRODUTO06.jpg','../img/PRODUTOS/PRODUTO07.webp','../img/PRODUTOS/PRODUTO08.jpg'];
+                </script>
+                </div>
+                <div class="card" onclick="abrirDetalhes('Pano de Prato', slider, desc_produto)">
+                    <img src="../img/PRODUTOS/PRODUTO08.jpg" alt="Produto 3">
+                    <h2> Loção Hidratante Desodorante Corporal Nativa Spa Ameixa Negra - 400ml </h2>
+                    <p>É uma loção diária de alta absorção que hidrata profundamente, estimula o colágeno através do óleo de quinoa e deixa uma fragrância marcante e duradoura na pele.</p>
+                    <p class="preco">R$ 80,00</p>
+                    <script>
+                    desc_produto8="Esses são um dos nossos produtos.\n\nEscolha  um de sua preferência!!!"
+                    slider8=['../img/PRODUTOS/PRODUTO01.jpg','../img/PRODUTOS/PRODUTO02.jpg','../img/PRODUTOS/PRODUTO03.jpg','../img/PRODUTOS/PRODUTO04.jpg','../img/PRODUTOS/PRODUTO05.jpg','../img/PRODUTOS/PRODUTO06.jpg','../img/PRODUTOS/PRODUTO07.webp','../img/PRODUTOS/PRODUTO08.jpg'];
+                </script>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <img src="../img/logo.jpeg" title="Joseph Perfumes Importados" class="logo_footer"/>
+            <p>
+                Encomendas on-line: 
+                <a href="https://wa.me/5511982290745" target="_blank"><i class="fa fa-whatsapp"></i> (11) 982290745</a> | 
+                <a href="https://instagram.com/kgbasilio" target="_blank"><i class="fa fa-instagram"></i> @kgbasilio</a>
+            </p>
+        </footer>
+    </body>
+</html> 

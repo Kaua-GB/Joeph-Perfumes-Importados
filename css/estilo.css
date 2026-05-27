@@ -9,7 +9,7 @@ main{
  /*Estilização padrão da Pagina*/
    body{
 margin: 1;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif';
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana, sans-serif';
 
 }
  
@@ -44,6 +44,14 @@ nav li{
 
 }
 
+/*cor dos menus*/
+
+nav li a{
+
+color: #dda250;
+text-decoration: none;
+
+}
 .divHeader{
     position: relative;
 }

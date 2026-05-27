@@ -1,0 +1,108 @@
+/*Estilização padrão da página*/
+body{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Título*/
+.produtos-titulo{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+    list-style: none;
+    margin: 0;
+}
+.produtos-titulo li:before{
+    content: "⚱💨";
+}
+
+/*Gradiente do fundo*/
+main{
+    background: linear-gradient(#000000)x
+}
+
+/*Container dos cards*/
+.container {
+    width: 90%;
+    margin-right: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+/*Estilização do card*/
+.card{
+    background-color: rgb(255, 255, 255);
+    width: 280px;
+    border-radius: 10px;
+    border: 20px;
+    border-color:  #dda250;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(127, 112, 0);
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card img{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+}
+/*Estilização da Data*/
+.data {
+    color: #dda250;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+/*Estilização da POP*/
+.pop{
+    margin: 0;
+}
+.pop img{
+    width: 650;
+    height: 450;
+    border-radius: 10px;
+}
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(78,8,116);
+}
+.pop p{
+    padding: 2% 0 9% 7%;
+    margin: 0;
+    white-space: pre-line;
+    
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+.slider button{
+    background-color: purple;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
